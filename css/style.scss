@@ -1,0 +1,210 @@
+body {
+  background: #ccc;
+  font-size: 12pt;
+  margin: 0;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.page {
+  width: 21cm;
+  height: 29.7cm;
+  background: white;
+  display: block;
+  //box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+}
+
+.text-area {
+  padding: 1.2cm;
+}
+
+.spacer {
+  height: 10px;
+  width: 100%;
+}
+
+.line {
+  border-top: 1px solid #111;
+}
+
+.vertical-line {
+  border-left: 1px solid #111;
+}
+
+.dot {
+  width: 4px;
+  height: 4px;
+  background-color: #111;
+  border-radius: 2px;
+}
+
+.dotted-line {
+  border: none;
+  border-top: 1.5px dotted #111;
+  margin: 5px 4%;
+}
+
+.skill-level {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+
+  p {
+    color: #222;
+  }
+
+  .skill-bar {
+    height: 6px;
+    background-color: #aaa;
+
+    .bar-depth {
+      height: 100%;
+      background-color: #467;
+    }
+  }
+}
+
+.icon-description {
+  display: flex;
+  flex-direction: row;
+  margin: 0 10px;
+  text-align: center;
+
+  p {
+    align-self: center;
+    margin-left: 8px;
+  }
+
+  img {
+    height: 20px;
+  }
+}
+
+.description {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-row-gap: 25px;
+  grid-column-gap: 25px;
+}
+
+.side-section {
+  grid-column: 1;
+  line-height: 1.5;
+}
+
+.section {
+  display: flex;
+  grid-column: 2;
+  line-height: 1.5;
+
+  ul {
+    margin: 0;
+  }
+}
+
+.section-content {
+  flex-grow: 1;
+  margin-top: 6px;
+  margin-bottom: 5px;
+}
+
+.section-divider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50px;
+  margin-right: 20px;
+
+  img {
+    width: 40px;
+  }
+
+  .vertical-line {
+    height: calc(100% - 30px);
+  }
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  font-size: 14pt;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-bottom: 10px;
+
+  .dot {
+    margin-left: 5px;
+  }
+
+  .line {
+    flex-grow: 1;
+  }
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+
+  img {
+    margin-left: 5px;
+    height: 15px;
+  }
+}
+
+.line-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#name-description {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 25px;
+
+  #name {
+    font-size: 22pt;
+    font-weight: 550;
+    letter-spacing: 1.5px;
+  }
+
+  #description {
+    color: #333;
+    font-size: 16pt;
+  }
+}
+
+#contact-info {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  padding: 0 5%;
+  font-size: 8pt;
+}
+
+#skills {
+  grid-row: 2 / span 3;
+}
+
+#objective {
+  p {
+    font-size: 11pt;
+  }
+}
+
+#honors {
+  grid-row: 5;
+}
