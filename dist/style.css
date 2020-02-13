@@ -26,7 +26,7 @@ a {
 }
 
 .text-area {
-  padding: 1.2cm;
+  padding: 0.5cm 0.5cm;
 }
 
 .spacer {
@@ -65,11 +65,11 @@ a {
 }
 .skill-level .skill-bar {
   height: 6px;
-  background-color: #aaa;
+  background-color: #BBB;
 }
 .skill-level .skill-bar .bar-depth {
   height: 100%;
-  background-color: #467;
+  background-color: #269;
 }
 
 .icon-description {
@@ -89,7 +89,7 @@ a {
 .description {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-row-gap: 25px;
+  grid-row-gap: 35px;
   grid-column-gap: 25px;
 }
 
