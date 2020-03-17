@@ -55,6 +55,11 @@ a {
   margin: 5px 4%;
 }
 
+.skill-list {
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+
 .skill-level {
   display: flex;
   flex-direction: column;
@@ -152,6 +157,10 @@ a {
   height: 15px;
 }
 
+.project-list p {
+  margin: 10px 0;
+}
+
 .line-container {
   display: flex;
   justify-content: space-between;
@@ -182,15 +191,15 @@ a {
 }
 
 #skills {
-  grid-row: 2/span 3;
+  grid-row: 2/span 2;
 }
 
 #objective p {
   font-size: 11pt;
 }
 
-#honors {
-  grid-row: 5;
+#projects {
+  grid-row: 4/span 2;
 }
 
 /*# sourceMappingURL=style.css.map */
