@@ -122,7 +122,6 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50px;
   margin-right: 20px;
 }
 .section-divider img {
