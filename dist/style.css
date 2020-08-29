@@ -86,6 +86,7 @@ a {
 .icon-description p {
   align-self: center;
   margin-left: 8px;
+  font-size: 11pt;
 }
 .icon-description img {
   height: 20px;
@@ -190,7 +191,6 @@ a {
   justify-content: space-between;
   width: 90%;
   padding: 0 5%;
-  font-size: 8pt;
 }
 
 #skills {
