@@ -1,7 +1,7 @@
 Objective: Skilled developer in web development and java development that can easily adapt to different workflows. Passionate about clean and reusable code.
 
 Skills:
-  Programming Languages: HTML, CSS. JavaScript, TypeScript, Java, Python, C, Dart
+  Programming Languages: HTML, CSS. JavaScript, MySQL, PHP, TypeScript, Java, Python, C, Dart
   Web Frameworks: Angular.js, React.js, Vue.js, Svelte, React Native, Flutter
   Web Technologies: Express.js, Socket.io, Tensorflow.js, Tensorflow
   Software: Git, GitHub, Linux, Unix, Unity 3D, 
@@ -29,7 +29,7 @@ Experience:
   - name: KnightHacks Development Team
     url: https://knighthacks.org
     location: Orlando, FL
-    role: Web & iOS Developer
+    role: Full Stack Web & iOS Developer
     dateRange: Apr 2019 - Present
     description:
       - Created KnightHacks website for club events

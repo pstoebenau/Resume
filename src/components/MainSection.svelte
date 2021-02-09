@@ -29,7 +29,7 @@
     </div>
     <div class="section-content">
       <div class="section-header">
-        <p>EXPERIENCE</p>
+        <p>PROFESSIONAL EXPERIENCE</p>
         <div class="dot"></div>
         <div class="line"></div>
       </div>

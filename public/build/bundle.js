@@ -562,7 +562,7 @@ var app = (function () {
     }
 
     var data = { Objective:"Skilled developer in web development and java development that can easily adapt to different workflows. Passionate about clean and reusable code.",
-      Skills:{ "Programming Languages":"HTML, CSS. JavaScript, TypeScript, Java, Python, C, Dart",
+      Skills:{ "Programming Languages":"HTML, CSS. JavaScript, MySQL, PHP, TypeScript, Java, Python, C, Dart",
         "Web Frameworks":"Angular.js, React.js, Vue.js, Svelte, React Native, Flutter",
         "Web Technologies":"Express.js, Socket.io, Tensorflow.js, Tensorflow",
         Software:"Git, GitHub, Linux, Unix, Unity 3D,",
@@ -582,7 +582,7 @@ var app = (function () {
       Experience:[ { name:"KnightHacks Development Team",
           url:"https://knighthacks.org",
           location:"Orlando, FL",
-          role:"Web & iOS Developer",
+          role:"Full Stack Web & iOS Developer",
           dateRange:"Apr 2019 - Present",
           description:[ "Created KnightHacks website for club events",
             "Uses Azure functions and Node.js with Google Calendar",
@@ -1116,7 +1116,7 @@ var app = (function () {
     		c: function create() {
     			li = element("li");
     			t = text(t_value);
-    			add_location(li, file$2, 46, 12, 1485);
+    			add_location(li, file$2, 46, 12, 1498);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -1195,18 +1195,18 @@ var app = (function () {
 
     			t8 = space();
     			attr_dev(p0, "class", "section-title svelte-1eyj9g");
-    			add_location(p0, file$2, 37, 35, 1180);
+    			add_location(p0, file$2, 37, 35, 1193);
     			attr_dev(a, "href", "experience.url");
-    			add_location(a, file$2, 37, 10, 1155);
-    			add_location(p1, file$2, 38, 10, 1241);
+    			add_location(a, file$2, 37, 10, 1168);
+    			add_location(p1, file$2, 38, 10, 1254);
     			attr_dev(div0, "class", "line-container svelte-1eyj9g");
-    			add_location(div0, file$2, 36, 8, 1116);
-    			add_location(i, file$2, 41, 10, 1332);
-    			add_location(p2, file$2, 42, 10, 1367);
+    			add_location(div0, file$2, 36, 8, 1129);
+    			add_location(i, file$2, 41, 10, 1345);
+    			add_location(p2, file$2, 42, 10, 1380);
     			attr_dev(div1, "class", "line-container svelte-1eyj9g");
-    			add_location(div1, file$2, 40, 8, 1293);
+    			add_location(div1, file$2, 40, 8, 1306);
     			attr_dev(ul, "class", "svelte-1eyj9g");
-    			add_location(ul, file$2, 44, 8, 1420);
+    			add_location(ul, file$2, 44, 8, 1433);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
@@ -1288,7 +1288,7 @@ var app = (function () {
     		c: function create() {
     			li = element("li");
     			t = text(t_value);
-    			add_location(li, file$2, 70, 16, 2141);
+    			add_location(li, file$2, 70, 16, 2154);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -1342,11 +1342,11 @@ var app = (function () {
 
     			t2 = space();
     			attr_dev(p, "class", "section-title svelte-1eyj9g");
-    			add_location(p, file$2, 67, 12, 2019);
+    			add_location(p, file$2, 67, 12, 2032);
     			attr_dev(ul, "class", "svelte-1eyj9g");
-    			add_location(ul, file$2, 68, 12, 2073);
+    			add_location(ul, file$2, 68, 12, 2086);
     			attr_dev(div, "class", "hobby svelte-1eyj9g");
-    			add_location(div, file$2, 66, 10, 1987);
+    			add_location(div, file$2, 66, 10, 2000);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -1413,7 +1413,7 @@ var app = (function () {
     		c: function create() {
     			p = element("p");
     			t = text(t_value);
-    			add_location(p, file$2, 92, 10, 2714);
+    			add_location(p, file$2, 92, 10, 2727);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -1469,13 +1469,13 @@ var app = (function () {
     			t5 = text(t5_value);
     			t6 = space();
     			attr_dev(p0, "class", "section-title svelte-1eyj9g");
-    			add_location(p0, file$2, 112, 12, 3256);
-    			add_location(i, file$2, 113, 12, 3309);
+    			add_location(p0, file$2, 112, 12, 3269);
+    			add_location(i, file$2, 113, 12, 3322);
     			set_style(div0, "display", "flex");
-    			add_location(div0, file$2, 111, 10, 3216);
-    			add_location(p1, file$2, 115, 10, 3357);
+    			add_location(div0, file$2, 111, 10, 3229);
+    			add_location(p1, file$2, 115, 10, 3370);
     			attr_dev(div1, "class", "line-container svelte-1eyj9g");
-    			add_location(div1, file$2, 110, 8, 3177);
+    			add_location(div1, file$2, 110, 8, 3190);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
@@ -1678,7 +1678,7 @@ var app = (function () {
     			div14 = element("div");
     			div13 = element("div");
     			p6 = element("p");
-    			p6.textContent = "EXPERIENCE";
+    			p6.textContent = "PROFESSIONAL EXPERIENCE";
     			t20 = space();
     			div11 = element("div");
     			t21 = space();
@@ -1795,9 +1795,9 @@ var app = (function () {
     			add_location(div10, file$2, 25, 4, 767);
     			add_location(p6, file$2, 31, 8, 972);
     			attr_dev(div11, "class", "dot svelte-1eyj9g");
-    			add_location(div11, file$2, 32, 8, 998);
+    			add_location(div11, file$2, 32, 8, 1011);
     			attr_dev(div12, "class", "line svelte-1eyj9g");
-    			add_location(div12, file$2, 33, 8, 1030);
+    			add_location(div12, file$2, 33, 8, 1043);
     			attr_dev(div13, "class", "section-header svelte-1eyj9g");
     			add_location(div13, file$2, 30, 6, 935);
     			attr_dev(div14, "class", "section-content svelte-1eyj9g");
@@ -1808,67 +1808,67 @@ var app = (function () {
     			if (img2.src !== (img2_src_value = "./images/hobby.svg")) attr_dev(img2, "src", img2_src_value);
     			attr_dev(img2, "alt", "team");
     			attr_dev(img2, "class", "svelte-1eyj9g");
-    			add_location(img2, file$2, 55, 6, 1646);
+    			add_location(img2, file$2, 55, 6, 1659);
     			attr_dev(div16, "class", "vertical-line svelte-1eyj9g");
-    			add_location(div16, file$2, 56, 6, 1694);
+    			add_location(div16, file$2, 56, 6, 1707);
     			attr_dev(div17, "class", "section-divider svelte-1eyj9g");
-    			add_location(div17, file$2, 54, 4, 1610);
-    			add_location(p7, file$2, 60, 8, 1816);
+    			add_location(div17, file$2, 54, 4, 1623);
+    			add_location(p7, file$2, 60, 8, 1829);
     			attr_dev(div18, "class", "dot svelte-1eyj9g");
-    			add_location(div18, file$2, 61, 8, 1839);
+    			add_location(div18, file$2, 61, 8, 1852);
     			attr_dev(div19, "class", "line svelte-1eyj9g");
-    			add_location(div19, file$2, 62, 8, 1871);
+    			add_location(div19, file$2, 62, 8, 1884);
     			attr_dev(div20, "class", "section-header svelte-1eyj9g");
-    			add_location(div20, file$2, 59, 6, 1779);
+    			add_location(div20, file$2, 59, 6, 1792);
     			attr_dev(div21, "class", "line-container svelte-1eyj9g");
-    			add_location(div21, file$2, 64, 6, 1915);
+    			add_location(div21, file$2, 64, 6, 1928);
     			attr_dev(div22, "class", "section-content svelte-1eyj9g");
-    			add_location(div22, file$2, 58, 4, 1743);
+    			add_location(div22, file$2, 58, 4, 1756);
     			attr_dev(div23, "class", "section svelte-1eyj9g");
     			attr_dev(div23, "id", "hobbies");
-    			add_location(div23, file$2, 53, 2, 1571);
+    			add_location(div23, file$2, 53, 2, 1584);
     			if (img3.src !== (img3_src_value = "./images/document.svg")) attr_dev(img3, "src", img3_src_value);
     			attr_dev(img3, "alt", "team");
     			attr_dev(img3, "class", "svelte-1eyj9g");
-    			add_location(img3, file$2, 81, 6, 2354);
+    			add_location(img3, file$2, 81, 6, 2367);
     			attr_dev(div24, "class", "vertical-line svelte-1eyj9g");
-    			add_location(div24, file$2, 82, 6, 2405);
+    			add_location(div24, file$2, 82, 6, 2418);
     			attr_dev(div25, "class", "section-divider svelte-1eyj9g");
-    			add_location(div25, file$2, 80, 4, 2318);
-    			add_location(p8, file$2, 86, 8, 2527);
+    			add_location(div25, file$2, 80, 4, 2331);
+    			add_location(p8, file$2, 86, 8, 2540);
     			attr_dev(div26, "class", "dot svelte-1eyj9g");
-    			add_location(div26, file$2, 87, 8, 2562);
+    			add_location(div26, file$2, 87, 8, 2575);
     			attr_dev(div27, "class", "line svelte-1eyj9g");
-    			add_location(div27, file$2, 88, 8, 2594);
+    			add_location(div27, file$2, 88, 8, 2607);
     			attr_dev(div28, "class", "section-header svelte-1eyj9g");
-    			add_location(div28, file$2, 85, 6, 2490);
+    			add_location(div28, file$2, 85, 6, 2503);
     			attr_dev(div29, "class", "line-container svelte-1eyj9g");
-    			add_location(div29, file$2, 90, 6, 2638);
+    			add_location(div29, file$2, 90, 6, 2651);
     			attr_dev(div30, "class", "section-content svelte-1eyj9g");
-    			add_location(div30, file$2, 84, 4, 2454);
+    			add_location(div30, file$2, 84, 4, 2467);
     			attr_dev(div31, "class", "section svelte-1eyj9g");
     			attr_dev(div31, "id", "relevant-coursework");
-    			add_location(div31, file$2, 79, 2, 2267);
+    			add_location(div31, file$2, 79, 2, 2280);
     			if (img4.src !== (img4_src_value = "./images/team.svg")) attr_dev(img4, "src", img4_src_value);
     			attr_dev(img4, "alt", "team");
     			attr_dev(img4, "class", "svelte-1eyj9g");
-    			add_location(img4, file$2, 100, 6, 2868);
+    			add_location(img4, file$2, 100, 6, 2881);
     			attr_dev(div32, "class", "vertical-line svelte-1eyj9g");
-    			add_location(div32, file$2, 101, 6, 2915);
+    			add_location(div32, file$2, 101, 6, 2928);
     			attr_dev(div33, "class", "section-divider svelte-1eyj9g");
-    			add_location(div33, file$2, 99, 4, 2832);
-    			add_location(p9, file$2, 105, 8, 3037);
+    			add_location(div33, file$2, 99, 4, 2845);
+    			add_location(p9, file$2, 105, 8, 3050);
     			attr_dev(div34, "class", "dot svelte-1eyj9g");
-    			add_location(div34, file$2, 106, 8, 3071);
+    			add_location(div34, file$2, 106, 8, 3084);
     			attr_dev(div35, "class", "line svelte-1eyj9g");
-    			add_location(div35, file$2, 107, 8, 3103);
+    			add_location(div35, file$2, 107, 8, 3116);
     			attr_dev(div36, "class", "section-header svelte-1eyj9g");
-    			add_location(div36, file$2, 104, 6, 3000);
+    			add_location(div36, file$2, 104, 6, 3013);
     			attr_dev(div37, "class", "section-content svelte-1eyj9g");
-    			add_location(div37, file$2, 103, 4, 2964);
+    			add_location(div37, file$2, 103, 4, 2977);
     			attr_dev(div38, "class", "section svelte-1eyj9g");
     			attr_dev(div38, "id", "campus-involvement");
-    			add_location(div38, file$2, 98, 2, 2782);
+    			add_location(div38, file$2, 98, 2, 2795);
     			add_location(div39, file$2, 0, 0, 0);
     		},
     		l: function claim(nodes) {
