@@ -22,8 +22,9 @@
     <div class="section-header">
       <p>HONORS</p>
     </div>
-    <p>Bright Futures<i>, Academic Scholar</i></p>
-    <p>UCF Dean's List</p>
+    {#each data["Honors"] as award}
+       <p>{award}</p>
+    {/each}
   </div>
   
   <div class="side-section" id="projects">

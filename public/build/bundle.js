@@ -637,15 +637,21 @@ var app = (function () {
     	return child_ctx;
     }
 
+    function get_each_context_2(ctx, list, i) {
+    	const child_ctx = ctx.slice();
+    	child_ctx[6] = list[i];
+    	return child_ctx;
+    }
+
     // (13:4) {#each Object.entries(data.Skills) as skill}
-    function create_each_block_1(ctx) {
+    function create_each_block_2(ctx) {
     	let div;
     	let p0;
-    	let t0_value = /*skill*/ ctx[3][0] + "";
+    	let t0_value = /*skill*/ ctx[6][0] + "";
     	let t0;
     	let t1;
     	let p1;
-    	let raw_value = /*skill*/ ctx[3][1] + "";
+    	let raw_value = /*skill*/ ctx[6][1] + "";
 
     	const block = {
     		c: function create() {
@@ -678,7 +684,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_each_block_1.name,
+    		id: create_each_block_2.name,
     		type: "each",
     		source: "(13:4) {#each Object.entries(data.Skills) as skill}",
     		ctx
@@ -687,7 +693,40 @@ var app = (function () {
     	return block;
     }
 
-    // (34:6) {#each Object.entries(data["Personal Project"]) as project}
+    // (25:4) {#each data["Honors"] as award}
+    function create_each_block_1(ctx) {
+    	let p;
+    	let t_value = /*award*/ ctx[3] + "";
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			p = element("p");
+    			t = text(t_value);
+    			add_location(p, file$1, 25, 7, 590);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, p, anchor);
+    			append_dev(p, t);
+    		},
+    		p: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(p);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block_1.name,
+    		type: "each",
+    		source: "(25:4) {#each data[\\\"Honors\\\"] as award}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (35:6) {#each Object.entries(data["Personal Project"]) as project}
     function create_each_block(ctx) {
     	let a;
     	let p;
@@ -711,16 +750,16 @@ var app = (function () {
     			t2 = space();
     			img = element("img");
     			t3 = space();
-    			add_location(b, file$1, 36, 10, 902);
-    			add_location(i, file$1, 36, 29, 921);
+    			add_location(b, file$1, 37, 10, 894);
+    			add_location(i, file$1, 37, 29, 913);
     			if (img.src !== (img_src_value = "./images/link.svg")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "link");
     			attr_dev(img, "class", "svelte-8fkpi8");
-    			add_location(img, file$1, 37, 10, 947);
+    			add_location(img, file$1, 38, 10, 939);
     			attr_dev(p, "class", "svelte-8fkpi8");
-    			add_location(p, file$1, 35, 8, 888);
+    			add_location(p, file$1, 36, 8, 880);
     			attr_dev(a, "href", /*project*/ ctx[0][1]);
-    			add_location(a, file$1, 34, 6, 858);
+    			add_location(a, file$1, 35, 6, 850);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a, anchor);
@@ -742,7 +781,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(34:6) {#each Object.entries(data[\\\"Personal Project\\\"]) as project}",
+    		source: "(35:6) {#each Object.entries(data[\\\"Personal Project\\\"]) as project}",
     		ctx
     	});
 
@@ -765,18 +804,21 @@ var app = (function () {
     	let div4;
     	let p2;
     	let t8;
-    	let p3;
     	let t9;
-    	let i;
-    	let t11;
-    	let p4;
-    	let t13;
     	let div8;
     	let div6;
-    	let p5;
-    	let t15;
+    	let p3;
+    	let t11;
     	let div7;
-    	let each_value_1 = Object.entries(data.Skills);
+    	let each_value_2 = Object.entries(data.Skills);
+    	validate_each_argument(each_value_2);
+    	let each_blocks_2 = [];
+
+    	for (let i = 0; i < each_value_2.length; i += 1) {
+    		each_blocks_2[i] = create_each_block_2(get_each_context_2(ctx, each_value_2, i));
+    	}
+
+    	let each_value_1 = data["Honors"];
     	validate_each_argument(each_value_1);
     	let each_blocks_1 = [];
 
@@ -808,8 +850,8 @@ var app = (function () {
     			p1.textContent = "SKILLS";
     			t5 = space();
 
-    			for (let i = 0; i < each_blocks_1.length; i += 1) {
-    				each_blocks_1[i].c();
+    			for (let i = 0; i < each_blocks_2.length; i += 1) {
+    				each_blocks_2[i].c();
     			}
 
     			t6 = space();
@@ -818,19 +860,17 @@ var app = (function () {
     			p2 = element("p");
     			p2.textContent = "HONORS";
     			t8 = space();
-    			p3 = element("p");
-    			t9 = text("Bright Futures");
-    			i = element("i");
-    			i.textContent = ", Academic Scholar";
-    			t11 = space();
-    			p4 = element("p");
-    			p4.textContent = "UCF Dean's List";
-    			t13 = space();
+
+    			for (let i = 0; i < each_blocks_1.length; i += 1) {
+    				each_blocks_1[i].c();
+    			}
+
+    			t9 = space();
     			div8 = element("div");
     			div6 = element("div");
-    			p5 = element("p");
-    			p5.textContent = "PERSONAL PROJECTS";
-    			t15 = space();
+    			p3 = element("p");
+    			p3.textContent = "PERSONAL PROJECTS";
+    			t11 = space();
     			div7 = element("div");
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
@@ -853,20 +893,17 @@ var app = (function () {
     			add_location(p2, file$1, 22, 6, 522);
     			attr_dev(div4, "class", "section-header svelte-8fkpi8");
     			add_location(div4, file$1, 21, 4, 487);
-    			add_location(i, file$1, 24, 21, 568);
-    			add_location(p3, file$1, 24, 4, 551);
-    			add_location(p4, file$1, 25, 4, 602);
     			attr_dev(div5, "class", "side-section svelte-8fkpi8");
     			attr_dev(div5, "id", "honors");
     			add_location(div5, file$1, 20, 2, 444);
-    			add_location(p5, file$1, 30, 6, 719);
+    			add_location(p3, file$1, 31, 6, 711);
     			attr_dev(div6, "class", "section-header svelte-8fkpi8");
-    			add_location(div6, file$1, 29, 4, 684);
+    			add_location(div6, file$1, 30, 4, 676);
     			attr_dev(div7, "class", "project-list svelte-8fkpi8");
-    			add_location(div7, file$1, 32, 4, 759);
+    			add_location(div7, file$1, 33, 4, 751);
     			attr_dev(div8, "class", "side-section svelte-8fkpi8");
     			attr_dev(div8, "id", "projects");
-    			add_location(div8, file$1, 28, 2, 639);
+    			add_location(div8, file$1, 29, 2, 631);
     			add_location(div9, file$1, 0, 0, 0);
     		},
     		l: function claim(nodes) {
@@ -884,8 +921,8 @@ var app = (function () {
     			append_dev(div2, p1);
     			append_dev(div3, t5);
 
-    			for (let i = 0; i < each_blocks_1.length; i += 1) {
-    				each_blocks_1[i].m(div3, null);
+    			for (let i = 0; i < each_blocks_2.length; i += 1) {
+    				each_blocks_2[i].m(div3, null);
     			}
 
     			append_dev(div9, t6);
@@ -893,16 +930,16 @@ var app = (function () {
     			append_dev(div5, div4);
     			append_dev(div4, p2);
     			append_dev(div5, t8);
-    			append_dev(div5, p3);
-    			append_dev(p3, t9);
-    			append_dev(p3, i);
-    			append_dev(div5, t11);
-    			append_dev(div5, p4);
-    			append_dev(div9, t13);
+
+    			for (let i = 0; i < each_blocks_1.length; i += 1) {
+    				each_blocks_1[i].m(div5, null);
+    			}
+
+    			append_dev(div9, t9);
     			append_dev(div9, div8);
     			append_dev(div8, div6);
-    			append_dev(div6, p5);
-    			append_dev(div8, t15);
+    			append_dev(div6, p3);
+    			append_dev(div8, t11);
     			append_dev(div8, div7);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
@@ -911,7 +948,31 @@ var app = (function () {
     		},
     		p: function update(ctx, [dirty]) {
     			if (dirty & /*Object, data*/ 0) {
-    				each_value_1 = Object.entries(data.Skills);
+    				each_value_2 = Object.entries(data.Skills);
+    				validate_each_argument(each_value_2);
+    				let i;
+
+    				for (i = 0; i < each_value_2.length; i += 1) {
+    					const child_ctx = get_each_context_2(ctx, each_value_2, i);
+
+    					if (each_blocks_2[i]) {
+    						each_blocks_2[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks_2[i] = create_each_block_2(child_ctx);
+    						each_blocks_2[i].c();
+    						each_blocks_2[i].m(div3, null);
+    					}
+    				}
+
+    				for (; i < each_blocks_2.length; i += 1) {
+    					each_blocks_2[i].d(1);
+    				}
+
+    				each_blocks_2.length = each_value_2.length;
+    			}
+
+    			if (dirty & /*data*/ 0) {
+    				each_value_1 = data["Honors"];
     				validate_each_argument(each_value_1);
     				let i;
 
@@ -923,7 +984,7 @@ var app = (function () {
     					} else {
     						each_blocks_1[i] = create_each_block_1(child_ctx);
     						each_blocks_1[i].c();
-    						each_blocks_1[i].m(div3, null);
+    						each_blocks_1[i].m(div5, null);
     					}
     				}
 
@@ -962,6 +1023,7 @@ var app = (function () {
     		o: noop,
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(div9);
+    			destroy_each(each_blocks_2, detaching);
     			destroy_each(each_blocks_1, detaching);
     			destroy_each(each_blocks, detaching);
     		}
@@ -1020,7 +1082,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    function get_each_context_2(ctx, list, i) {
+    function get_each_context_2$1(ctx, list, i) {
     	const child_ctx = ctx.slice();
     	child_ctx[10] = list[i];
     	return child_ctx;
@@ -1250,7 +1312,7 @@ var app = (function () {
     }
 
     // (66:8) {#each hobbies as hobby}
-    function create_each_block_2(ctx) {
+    function create_each_block_2$1(ctx) {
     	let div;
     	let p;
     	let t0_value = /*hobby*/ ctx[10].name + "";
@@ -1332,7 +1394,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_each_block_2.name,
+    		id: create_each_block_2$1.name,
     		type: "each",
     		source: "(66:8) {#each hobbies as hobby}",
     		ctx
@@ -1553,7 +1615,7 @@ var app = (function () {
     	let each_blocks_2 = [];
 
     	for (let i = 0; i < each_value_2.length; i += 1) {
-    		each_blocks_2[i] = create_each_block_2(get_each_context_2(ctx, each_value_2, i));
+    		each_blocks_2[i] = create_each_block_2$1(get_each_context_2$1(ctx, each_value_2, i));
     	}
 
     	let each_value_1 = /*coursework*/ ctx[2];
@@ -1952,12 +2014,12 @@ var app = (function () {
     				let i;
 
     				for (i = 0; i < each_value_2.length; i += 1) {
-    					const child_ctx = get_each_context_2(ctx, each_value_2, i);
+    					const child_ctx = get_each_context_2$1(ctx, each_value_2, i);
 
     					if (each_blocks_2[i]) {
     						each_blocks_2[i].p(child_ctx, dirty);
     					} else {
-    						each_blocks_2[i] = create_each_block_2(child_ctx);
+    						each_blocks_2[i] = create_each_block_2$1(child_ctx);
     						each_blocks_2[i].c();
     						each_blocks_2[i].m(div21, null);
     					}
