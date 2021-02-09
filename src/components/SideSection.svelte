@@ -18,15 +18,6 @@
     {/each}
   </div>
   
-  <div class="side-section" id="honors">
-    <div class="section-header">
-      <p>HONORS</p>
-    </div>
-    {#each data["Honors"] as award}
-       <p>{award}</p>
-    {/each}
-  </div>
-  
   <div class="side-section" id="projects">
     <div class="section-header">
       <p>PERSONAL PROJECTS</p>
@@ -41,6 +32,15 @@
       </a>
       {/each}
     </div>
+  </div>
+  
+  <div class="side-section" id="honors">
+    <div class="section-header">
+      <p>HONORS</p>
+    </div>
+    {#each data["Honors"] as award}
+       <p>{award}</p>
+    {/each}
   </div>
 </div>
 
