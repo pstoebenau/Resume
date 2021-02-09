@@ -1,0 +1,79 @@
+Objective: Skilled developer in web development and java development that can easily adapt to different workflows. Passionate about clean and reusable code.
+
+Skills:
+  Programming Languages: HTML, CSS. JavaScript, TypeScript, Java, Python, C, Dart
+  Web Frameworks: Angular.js, React.js, Vue.js, Svelte, React Native, Flutter
+  Web Technologies: Express.js, Socket.io, Tensorflow.js, Tensorflow
+  Software: Git, GitHub, Linux, Unix, Unity 3D, 
+  Languages: English (Native)<br>German (Intermediate)<br>Spanish (Basic)
+
+Honors:
+  - Bright Futures, Academic Scholar
+  - UCF Dean's List
+
+Personal Project:
+  BicBacBoe: https://github.com/pstoebenau/BicBacBoe
+  Polynomial Regression Neural Network: https://github.com/pstoebenau/Polynomial_Regression_AI
+  4D Visualization: https://github.com/pstoebenau/4D-Visualization
+  Resume: https://github.com/pstoebenau/Resume
+  Neural Network: https://github.com/pstoebenau/NeuralNetwork
+
+Education:
+  college: University of Central Florida
+  location: Orlando, FL
+  degree: Bachelors of Science in Computer Science
+  gradDate: Apr 2022
+  gpa: 3.62
+
+Experience:
+  - name: KnightHacks Development Team
+    url: https://knighthacks.org
+    location: Orlando, FL
+    role: Web & iOS Developer
+    dateRange: Apr 2019 - Present
+    description:
+      - Created KnightHacks website for club events
+      - Uses Azure functions and Node.js with Google Calendar
+      - Created profile page for UCF hackathon iOS app
+      - Uses Swift 5 in Xcode with a backend in Node.js
+  - name: Crown Heritage Law
+    url: https://crownheritagelaw.com
+    location: Orlando, FL
+    role: Web Developer & Project Manager
+    dateRange: Aug 2020 - Dec 2020
+    description:
+      - Created professional website for client
+      - Lead development team in a AGILE work environment
+      - Uses Vue.js as framework
+
+Hobbies:
+  - name: 3D Printing
+    description:
+    - Built Anet A8 printer
+    - Custom Merlin software
+    - Acessible anywhere with Octoprint
+  - name: FPV Drone
+    description:
+    - Built Racing drone
+    - Top speed is around 80mph
+    - Transmits anlog video to FPV headset
+
+Coursework:
+  - Computer Science II
+  - Discrete Computational Structures
+  - Systems Software
+  - Object Oriented Programming
+  - Computer Logic & Organization
+  - Security in Computing
+
+
+Campus Involvement:
+  - name: KnightHacks
+    role: Developer
+    dateRange: Jan 2019 - Present
+  - name: Hack@UCF
+    role: Member
+    dateRange: Aug 2018 - Present
+  - name: FPV Knights
+    role: Member
+    dateRange: Jan 2019 - Present
