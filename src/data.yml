@@ -34,7 +34,7 @@ Experience:
     description:
       - Created KnightHacks website for club events
       - Uses Azure functions and Node.js with Google Calendar
-      - Created profile page for UCF hackathon iOS app
+      - Created profile page for UCF Hackathon iOS app
       - Uses Swift 5 in Xcode with a backend in Node.js
   - name: Crown Heritage Law
     url: https://crownheritagelaw.com
@@ -51,12 +51,12 @@ Hobbies:
     description:
     - Built Anet A8 printer
     - Custom Merlin software
-    - Acessible anywhere with Octoprint
+    - Accessible anywhere with Octoprint
   - name: FPV Drone
     description:
     - Built Racing drone
     - Top speed is around 80mph
-    - Transmits anlog video to FPV headset
+    - Transmits analog video to FPV headset
 
 Coursework:
   - Computer Science II
