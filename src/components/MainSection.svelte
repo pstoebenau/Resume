@@ -35,7 +35,7 @@
       </div>
       {#each experiences as experience}
         <div class="line-container">
-          <a href="experience.url"><p class="section-title">{experience.name}</p></a>
+          <a href="{experience.url}" target=blank><p class="section-title">{experience.name}</p></a>
           <p>{experience.location}</p>
         </div>
         <div class="line-container">
@@ -77,7 +77,7 @@
     </div>
   </div>
   
-  <div class="section" id="relevant-coursework">
+  <!-- <div class="section" id="relevant-coursework">
     <div class="section-divider">
       <img src="./images/document.svg" alt="team">
       <div class="vertical-line"></div>
@@ -94,7 +94,7 @@
         {/each}
       </div>
     </div>
-  </div>
+  </div> -->
 
   <div class="section" id="campus-involvement">
     <div class="section-divider">
@@ -187,7 +187,7 @@ interface CampusInvolvement {
 .section {
   display: flex;
   line-height: 1.5;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
   ul {
     margin: 0;

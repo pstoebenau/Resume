@@ -1,4 +1,4 @@
-Objective: Skilled developer in web development and java development that can easily adapt to different workflows. Passionate about clean and reusable code.
+Objective: Skilled developer in web development and Java and Python development that can easily adapt to different workflows. Passionate about clean and reusable code.
 
 Skills:
   Programming Languages: HTML, CSS. JavaScript, MySQL, PHP, TypeScript, Java, Python, C, Dart
@@ -26,15 +26,23 @@ Education:
   gpa: 3.62
 
 Experience:
+  - name: Amazing Voice
+    url: https://amazingvoice.com
+    location: Orlando, FL
+    role: Full Stack Web
+    dateRange: March 2021 - Present
+    description:
+      - Maintain admin panel and main website
+      - Use PHP and tech like Bootstrap, Font Awesome, and jQuery
+      - Created custom blog generator that saves a day for each blog
   - name: KnightHacks Development Team
     url: https://knighthacks.org
     location: Orlando, FL
     role: Full Stack Web & iOS Developer
-    dateRange: Apr 2019 - Present
+    dateRange: Apr 2019 - August 2020
     description:
       - Created KnightHacks website for club events
       - Uses Azure functions and Node.js with Google Calendar
-      - Created profile page for UCF Hackathon iOS app
       - Uses Swift 5 in Xcode with a backend in Node.js
   - name: Crown Heritage Law
     url: https://crownheritagelaw.com
@@ -42,9 +50,17 @@ Experience:
     role: Web Developer & Project Manager
     dateRange: Aug 2020 - Dec 2020
     description:
-      - Created professional website for client
       - Lead development team in a AGILE work environment
       - Uses Vue.js as framework
+  - name: Chill Chili
+    url: https://chillchili.ml
+    location: Orlando, Fl
+    role: Full Stack Web & App Developer
+    dateRange: March 2021 - April 2021
+    description:
+      - Flutter application for iOS, Android, and Web
+      - MongoDB, Node.js, and Typescript for REST API
+
 
 Hobbies:
   - name: 3D Printing

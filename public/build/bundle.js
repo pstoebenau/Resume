@@ -561,7 +561,7 @@ var app = (function () {
     	}
     }
 
-    var data = { Objective:"Skilled developer in web development and java development that can easily adapt to different workflows. Passionate about clean and reusable code.",
+    var data = { Objective:"Skilled developer in web development and Java and Python development that can easily adapt to different workflows. Passionate about clean and reusable code.",
       Skills:{ "Programming Languages":"HTML, CSS. JavaScript, MySQL, PHP, TypeScript, Java, Python, C, Dart",
         "Web Frameworks":"Angular.js, React.js, Vue.js, Svelte, React Native, Flutter",
         "Web Technologies":"Express.js, Socket.io, Tensorflow.js, Tensorflow",
@@ -579,23 +579,36 @@ var app = (function () {
         degree:"Bachelors of Science in Computer Science",
         gradDate:"Apr 2022",
         gpa:3.62 },
-      Experience:[ { name:"KnightHacks Development Team",
+      Experience:[ { name:"Amazing Voice",
+          url:"https://amazingvoice.com",
+          location:"Orlando, FL",
+          role:"Full Stack Web",
+          dateRange:"March 2021 - Present",
+          description:[ "Maintain admin panel and main website",
+            "Use PHP and tech like Bootstrap, Font Awesome, and jQuery",
+            "Created custom blog generator that saves a day for each blog" ] },
+        { name:"KnightHacks Development Team",
           url:"https://knighthacks.org",
           location:"Orlando, FL",
           role:"Full Stack Web & iOS Developer",
-          dateRange:"Apr 2019 - Present",
+          dateRange:"Apr 2019 - August 2020",
           description:[ "Created KnightHacks website for club events",
             "Uses Azure functions and Node.js with Google Calendar",
-            "Created profile page for UCF Hackathon iOS app",
             "Uses Swift 5 in Xcode with a backend in Node.js" ] },
         { name:"Crown Heritage Law",
           url:"https://crownheritagelaw.com",
           location:"Orlando, FL",
           role:"Web Developer & Project Manager",
           dateRange:"Aug 2020 - Dec 2020",
-          description:[ "Created professional website for client",
-            "Lead development team in a AGILE work environment",
-            "Uses Vue.js as framework" ] } ],
+          description:[ "Lead development team in a AGILE work environment",
+            "Uses Vue.js as framework" ] },
+        { name:"Chill Chili",
+          url:"https://chillchili.ml",
+          location:"Orlando, Fl",
+          role:"Full Stack Web & App Developer",
+          dateRange:"March 2021 - April 2021",
+          description:[ "Flutter application for iOS, Android, and Web",
+            "MongoDB, Node.js, and Typescript for REST API" ] } ],
       Hobbies:[ { name:"3D Printing",
           description:[ "Built Anet A8 printer",
             "Custom Merlin software",
@@ -1096,27 +1109,21 @@ var app = (function () {
 
     function get_each_context_4(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[16] = list[i];
-    	return child_ctx;
-    }
-
-    function get_each_context_5(ctx, list, i) {
-    	const child_ctx = ctx.slice();
-    	child_ctx[13] = list[i];
+    	child_ctx[10] = list[i];
     	return child_ctx;
     }
 
     // (46:10) {#each experience.description as str}
-    function create_each_block_5(ctx) {
+    function create_each_block_4(ctx) {
     	let li;
-    	let t_value = /*str*/ ctx[13] + "";
+    	let t_value = /*str*/ ctx[10] + "";
     	let t;
 
     	const block = {
     		c: function create() {
     			li = element("li");
     			t = text(t_value);
-    			add_location(li, file$2, 46, 12, 1498);
+    			add_location(li, file$2, 46, 12, 1513);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -1130,7 +1137,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_each_block_5.name,
+    		id: create_each_block_4.name,
     		type: "each",
     		source: "(46:10) {#each experience.description as str}",
     		ctx
@@ -1140,34 +1147,34 @@ var app = (function () {
     }
 
     // (36:6) {#each experiences as experience}
-    function create_each_block_4(ctx) {
+    function create_each_block_3(ctx) {
     	let div0;
     	let a;
     	let p0;
-    	let t0_value = /*experience*/ ctx[16].name + "";
+    	let t0_value = /*experience*/ ctx[13].name + "";
     	let t0;
     	let t1;
     	let p1;
-    	let t2_value = /*experience*/ ctx[16].location + "";
+    	let t2_value = /*experience*/ ctx[13].location + "";
     	let t2;
     	let t3;
     	let div1;
     	let i;
-    	let t4_value = /*experience*/ ctx[16].role + "";
+    	let t4_value = /*experience*/ ctx[13].role + "";
     	let t4;
     	let t5;
     	let p2;
-    	let t6_value = /*experience*/ ctx[16].dateRange + "";
+    	let t6_value = /*experience*/ ctx[13].dateRange + "";
     	let t6;
     	let t7;
     	let ul;
     	let t8;
-    	let each_value_5 = /*experience*/ ctx[16].description;
-    	validate_each_argument(each_value_5);
+    	let each_value_4 = /*experience*/ ctx[13].description;
+    	validate_each_argument(each_value_4);
     	let each_blocks = [];
 
-    	for (let i = 0; i < each_value_5.length; i += 1) {
-    		each_blocks[i] = create_each_block_5(get_each_context_5(ctx, each_value_5, i));
+    	for (let i = 0; i < each_value_4.length; i += 1) {
+    		each_blocks[i] = create_each_block_4(get_each_context_4(ctx, each_value_4, i));
     	}
 
     	const block = {
@@ -1194,19 +1201,20 @@ var app = (function () {
     			}
 
     			t8 = space();
-    			attr_dev(p0, "class", "section-title svelte-1eyj9g");
-    			add_location(p0, file$2, 37, 35, 1193);
-    			attr_dev(a, "href", "experience.url");
+    			attr_dev(p0, "class", "section-title svelte-96vjxb");
+    			add_location(p0, file$2, 37, 50, 1208);
+    			attr_dev(a, "href", /*experience*/ ctx[13].url);
+    			attr_dev(a, "target", "blank");
     			add_location(a, file$2, 37, 10, 1168);
-    			add_location(p1, file$2, 38, 10, 1254);
-    			attr_dev(div0, "class", "line-container svelte-1eyj9g");
+    			add_location(p1, file$2, 38, 10, 1269);
+    			attr_dev(div0, "class", "line-container svelte-96vjxb");
     			add_location(div0, file$2, 36, 8, 1129);
-    			add_location(i, file$2, 41, 10, 1345);
-    			add_location(p2, file$2, 42, 10, 1380);
-    			attr_dev(div1, "class", "line-container svelte-1eyj9g");
-    			add_location(div1, file$2, 40, 8, 1306);
-    			attr_dev(ul, "class", "svelte-1eyj9g");
-    			add_location(ul, file$2, 44, 8, 1433);
+    			add_location(i, file$2, 41, 10, 1360);
+    			add_location(p2, file$2, 42, 10, 1395);
+    			attr_dev(div1, "class", "line-container svelte-96vjxb");
+    			add_location(div1, file$2, 40, 8, 1321);
+    			attr_dev(ul, "class", "svelte-96vjxb");
+    			add_location(ul, file$2, 44, 8, 1448);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
@@ -1234,17 +1242,17 @@ var app = (function () {
     		},
     		p: function update(ctx, dirty) {
     			if (dirty & /*experiences*/ 1) {
-    				each_value_5 = /*experience*/ ctx[16].description;
-    				validate_each_argument(each_value_5);
+    				each_value_4 = /*experience*/ ctx[13].description;
+    				validate_each_argument(each_value_4);
     				let i;
 
-    				for (i = 0; i < each_value_5.length; i += 1) {
-    					const child_ctx = get_each_context_5(ctx, each_value_5, i);
+    				for (i = 0; i < each_value_4.length; i += 1) {
+    					const child_ctx = get_each_context_4(ctx, each_value_4, i);
 
     					if (each_blocks[i]) {
     						each_blocks[i].p(child_ctx, dirty);
     					} else {
-    						each_blocks[i] = create_each_block_5(child_ctx);
+    						each_blocks[i] = create_each_block_4(child_ctx);
     						each_blocks[i].c();
     						each_blocks[i].m(ul, t8);
     					}
@@ -1254,7 +1262,7 @@ var app = (function () {
     					each_blocks[i].d(1);
     				}
 
-    				each_blocks.length = each_value_5.length;
+    				each_blocks.length = each_value_4.length;
     			}
     		},
     		d: function destroy(detaching) {
@@ -1269,7 +1277,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_each_block_4.name,
+    		id: create_each_block_3.name,
     		type: "each",
     		source: "(36:6) {#each experiences as experience}",
     		ctx
@@ -1279,16 +1287,16 @@ var app = (function () {
     }
 
     // (70:14) {#each hobby.description as str}
-    function create_each_block_3(ctx) {
+    function create_each_block_2$1(ctx) {
     	let li;
-    	let t_value = /*str*/ ctx[13] + "";
+    	let t_value = /*str*/ ctx[10] + "";
     	let t;
 
     	const block = {
     		c: function create() {
     			li = element("li");
     			t = text(t_value);
-    			add_location(li, file$2, 70, 16, 2154);
+    			add_location(li, file$2, 70, 16, 2169);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -1302,7 +1310,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_each_block_3.name,
+    		id: create_each_block_2$1.name,
     		type: "each",
     		source: "(70:14) {#each hobby.description as str}",
     		ctx
@@ -1312,20 +1320,20 @@ var app = (function () {
     }
 
     // (66:8) {#each hobbies as hobby}
-    function create_each_block_2$1(ctx) {
+    function create_each_block_1$1(ctx) {
     	let div;
     	let p;
-    	let t0_value = /*hobby*/ ctx[10].name + "";
+    	let t0_value = /*hobby*/ ctx[7].name + "";
     	let t0;
     	let t1;
     	let ul;
     	let t2;
-    	let each_value_3 = /*hobby*/ ctx[10].description;
-    	validate_each_argument(each_value_3);
+    	let each_value_2 = /*hobby*/ ctx[7].description;
+    	validate_each_argument(each_value_2);
     	let each_blocks = [];
 
-    	for (let i = 0; i < each_value_3.length; i += 1) {
-    		each_blocks[i] = create_each_block_3(get_each_context_3(ctx, each_value_3, i));
+    	for (let i = 0; i < each_value_2.length; i += 1) {
+    		each_blocks[i] = create_each_block_2$1(get_each_context_2$1(ctx, each_value_2, i));
     	}
 
     	const block = {
@@ -1341,12 +1349,12 @@ var app = (function () {
     			}
 
     			t2 = space();
-    			attr_dev(p, "class", "section-title svelte-1eyj9g");
-    			add_location(p, file$2, 67, 12, 2032);
-    			attr_dev(ul, "class", "svelte-1eyj9g");
-    			add_location(ul, file$2, 68, 12, 2086);
-    			attr_dev(div, "class", "hobby svelte-1eyj9g");
-    			add_location(div, file$2, 66, 10, 2000);
+    			attr_dev(p, "class", "section-title svelte-96vjxb");
+    			add_location(p, file$2, 67, 12, 2047);
+    			attr_dev(ul, "class", "svelte-96vjxb");
+    			add_location(ul, file$2, 68, 12, 2101);
+    			attr_dev(div, "class", "hobby svelte-96vjxb");
+    			add_location(div, file$2, 66, 10, 2015);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -1363,17 +1371,17 @@ var app = (function () {
     		},
     		p: function update(ctx, dirty) {
     			if (dirty & /*hobbies*/ 2) {
-    				each_value_3 = /*hobby*/ ctx[10].description;
-    				validate_each_argument(each_value_3);
+    				each_value_2 = /*hobby*/ ctx[7].description;
+    				validate_each_argument(each_value_2);
     				let i;
 
-    				for (i = 0; i < each_value_3.length; i += 1) {
-    					const child_ctx = get_each_context_3(ctx, each_value_3, i);
+    				for (i = 0; i < each_value_2.length; i += 1) {
+    					const child_ctx = get_each_context_2$1(ctx, each_value_2, i);
 
     					if (each_blocks[i]) {
     						each_blocks[i].p(child_ctx, dirty);
     					} else {
-    						each_blocks[i] = create_each_block_3(child_ctx);
+    						each_blocks[i] = create_each_block_2$1(child_ctx);
     						each_blocks[i].c();
     						each_blocks[i].m(ul, null);
     					}
@@ -1383,7 +1391,7 @@ var app = (function () {
     					each_blocks[i].d(1);
     				}
 
-    				each_blocks.length = each_value_3.length;
+    				each_blocks.length = each_value_2.length;
     			}
     		},
     		d: function destroy(detaching) {
@@ -1394,42 +1402,9 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_each_block_2$1.name,
-    		type: "each",
-    		source: "(66:8) {#each hobbies as hobby}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (92:8) {#each coursework as course}
-    function create_each_block_1$1(ctx) {
-    	let p;
-    	let t_value = /*course*/ ctx[7] + "";
-    	let t;
-
-    	const block = {
-    		c: function create() {
-    			p = element("p");
-    			t = text(t_value);
-    			add_location(p, file$2, 92, 10, 2727);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, p, anchor);
-    			append_dev(p, t);
-    		},
-    		p: noop,
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(p);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
     		id: create_each_block_1$1.name,
     		type: "each",
-    		source: "(92:8) {#each coursework as course}",
+    		source: "(66:8) {#each hobbies as hobby}",
     		ctx
     	});
 
@@ -1468,14 +1443,14 @@ var app = (function () {
     			p1 = element("p");
     			t5 = text(t5_value);
     			t6 = space();
-    			attr_dev(p0, "class", "section-title svelte-1eyj9g");
-    			add_location(p0, file$2, 112, 12, 3269);
-    			add_location(i, file$2, 113, 12, 3322);
+    			attr_dev(p0, "class", "section-title svelte-96vjxb");
+    			add_location(p0, file$2, 112, 12, 3293);
+    			add_location(i, file$2, 113, 12, 3346);
     			set_style(div0, "display", "flex");
-    			add_location(div0, file$2, 111, 10, 3229);
-    			add_location(p1, file$2, 115, 10, 3370);
-    			attr_dev(div1, "class", "line-container svelte-1eyj9g");
-    			add_location(div1, file$2, 110, 8, 3190);
+    			add_location(div0, file$2, 111, 10, 3253);
+    			add_location(p1, file$2, 115, 10, 3394);
+    			attr_dev(div1, "class", "line-container svelte-96vjxb");
+    			add_location(div1, file$2, 110, 8, 3214);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
@@ -1509,7 +1484,7 @@ var app = (function () {
     }
 
     function create_fragment$2(ctx) {
-    	let div39;
+    	let div31;
     	let div8;
     	let div1;
     	let img0;
@@ -1570,14 +1545,14 @@ var app = (function () {
     	let t29;
     	let div21;
     	let t30;
-    	let div31;
+    	let div30;
     	let div25;
     	let img3;
     	let img3_src_value;
     	let t31;
     	let div24;
     	let t32;
-    	let div30;
+    	let div29;
     	let div28;
     	let p8;
     	let t34;
@@ -1585,40 +1560,15 @@ var app = (function () {
     	let t35;
     	let div27;
     	let t36;
-    	let div29;
-    	let t37;
-    	let div38;
-    	let div33;
-    	let img4;
-    	let img4_src_value;
-    	let t38;
-    	let div32;
-    	let t39;
-    	let div37;
-    	let div36;
-    	let p9;
-    	let t41;
-    	let div34;
-    	let t42;
-    	let div35;
-    	let t43;
-    	let each_value_4 = /*experiences*/ ctx[0];
-    	validate_each_argument(each_value_4);
-    	let each_blocks_3 = [];
-
-    	for (let i = 0; i < each_value_4.length; i += 1) {
-    		each_blocks_3[i] = create_each_block_4(get_each_context_4(ctx, each_value_4, i));
-    	}
-
-    	let each_value_2 = /*hobbies*/ ctx[1];
-    	validate_each_argument(each_value_2);
+    	let each_value_3 = /*experiences*/ ctx[0];
+    	validate_each_argument(each_value_3);
     	let each_blocks_2 = [];
 
-    	for (let i = 0; i < each_value_2.length; i += 1) {
-    		each_blocks_2[i] = create_each_block_2$1(get_each_context_2$1(ctx, each_value_2, i));
+    	for (let i = 0; i < each_value_3.length; i += 1) {
+    		each_blocks_2[i] = create_each_block_3(get_each_context_3(ctx, each_value_3, i));
     	}
 
-    	let each_value_1 = /*coursework*/ ctx[2];
+    	let each_value_1 = /*hobbies*/ ctx[1];
     	validate_each_argument(each_value_1);
     	let each_blocks_1 = [];
 
@@ -1626,7 +1576,7 @@ var app = (function () {
     		each_blocks_1[i] = create_each_block_1$1(get_each_context_1$1(ctx, each_value_1, i));
     	}
 
-    	let each_value = /*clubs*/ ctx[3];
+    	let each_value = /*clubs*/ ctx[2];
     	validate_each_argument(each_value);
     	let each_blocks = [];
 
@@ -1636,7 +1586,7 @@ var app = (function () {
 
     	const block = {
     		c: function create() {
-    			div39 = element("div");
+    			div31 = element("div");
     			div8 = element("div");
     			div1 = element("div");
     			img0 = element("img");
@@ -1685,8 +1635,8 @@ var app = (function () {
     			div12 = element("div");
     			t22 = space();
 
-    			for (let i = 0; i < each_blocks_3.length; i += 1) {
-    				each_blocks_3[i].c();
+    			for (let i = 0; i < each_blocks_2.length; i += 1) {
+    				each_blocks_2[i].c();
     			}
 
     			t23 = space();
@@ -1707,48 +1657,26 @@ var app = (function () {
     			t29 = space();
     			div21 = element("div");
 
-    			for (let i = 0; i < each_blocks_2.length; i += 1) {
-    				each_blocks_2[i].c();
+    			for (let i = 0; i < each_blocks_1.length; i += 1) {
+    				each_blocks_1[i].c();
     			}
 
     			t30 = space();
-    			div31 = element("div");
+    			div30 = element("div");
     			div25 = element("div");
     			img3 = element("img");
     			t31 = space();
     			div24 = element("div");
     			t32 = space();
-    			div30 = element("div");
+    			div29 = element("div");
     			div28 = element("div");
     			p8 = element("p");
-    			p8.textContent = "RELEVANT COURSEWORK";
+    			p8.textContent = "CAMPUS INVOLVEMENT";
     			t34 = space();
     			div26 = element("div");
     			t35 = space();
     			div27 = element("div");
     			t36 = space();
-    			div29 = element("div");
-
-    			for (let i = 0; i < each_blocks_1.length; i += 1) {
-    				each_blocks_1[i].c();
-    			}
-
-    			t37 = space();
-    			div38 = element("div");
-    			div33 = element("div");
-    			img4 = element("img");
-    			t38 = space();
-    			div32 = element("div");
-    			t39 = space();
-    			div37 = element("div");
-    			div36 = element("div");
-    			p9 = element("p");
-    			p9.textContent = "CAMPUS INVOLVEMENT";
-    			t41 = space();
-    			div34 = element("div");
-    			t42 = space();
-    			div35 = element("div");
-    			t43 = space();
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].c();
@@ -1756,127 +1684,105 @@ var app = (function () {
 
     			if (img0.src !== (img0_src_value = "./images/university.svg")) attr_dev(img0, "src", img0_src_value);
     			attr_dev(img0, "alt", "team");
-    			attr_dev(img0, "class", "svelte-1eyj9g");
+    			attr_dev(img0, "class", "svelte-96vjxb");
     			add_location(img0, file$2, 3, 6, 85);
-    			attr_dev(div0, "class", "vertical-line svelte-1eyj9g");
+    			attr_dev(div0, "class", "vertical-line svelte-96vjxb");
     			add_location(div0, file$2, 4, 6, 138);
-    			attr_dev(div1, "class", "section-divider svelte-1eyj9g");
+    			attr_dev(div1, "class", "section-divider svelte-96vjxb");
     			add_location(div1, file$2, 2, 4, 49);
     			add_location(p0, file$2, 8, 8, 260);
-    			attr_dev(div2, "class", "dot svelte-1eyj9g");
+    			attr_dev(div2, "class", "dot svelte-96vjxb");
     			add_location(div2, file$2, 9, 8, 285);
-    			attr_dev(div3, "class", "line svelte-1eyj9g");
+    			attr_dev(div3, "class", "line svelte-96vjxb");
     			add_location(div3, file$2, 10, 8, 317);
-    			attr_dev(div4, "class", "section-header svelte-1eyj9g");
+    			attr_dev(div4, "class", "section-header svelte-96vjxb");
     			add_location(div4, file$2, 7, 6, 223);
-    			attr_dev(p1, "class", "section-title svelte-1eyj9g");
+    			attr_dev(p1, "class", "section-title svelte-96vjxb");
     			add_location(p1, file$2, 13, 8, 398);
     			add_location(p2, file$2, 14, 8, 460);
-    			attr_dev(div5, "class", "line-container svelte-1eyj9g");
+    			attr_dev(div5, "class", "line-container svelte-96vjxb");
     			add_location(div5, file$2, 12, 6, 361);
     			set_style(p3, "font-style", "italic");
     			add_location(p3, file$2, 17, 8, 549);
     			add_location(p4, file$2, 18, 8, 615);
-    			attr_dev(div6, "class", "line-container svelte-1eyj9g");
+    			attr_dev(div6, "class", "line-container svelte-96vjxb");
     			add_location(div6, file$2, 16, 6, 512);
     			add_location(p5, file$2, 20, 6, 667);
-    			attr_dev(div7, "class", "section-content svelte-1eyj9g");
+    			attr_dev(div7, "class", "section-content svelte-96vjxb");
     			add_location(div7, file$2, 6, 4, 187);
-    			attr_dev(div8, "class", "section svelte-1eyj9g");
+    			attr_dev(div8, "class", "section svelte-96vjxb");
     			attr_dev(div8, "id", "education");
     			add_location(div8, file$2, 1, 2, 8);
     			if (img1.src !== (img1_src_value = "./images/edit.svg")) attr_dev(img1, "src", img1_src_value);
     			attr_dev(img1, "alt", "team");
-    			attr_dev(img1, "class", "svelte-1eyj9g");
+    			attr_dev(img1, "class", "svelte-96vjxb");
     			add_location(img1, file$2, 26, 6, 803);
-    			attr_dev(div9, "class", "vertical-line svelte-1eyj9g");
+    			attr_dev(div9, "class", "vertical-line svelte-96vjxb");
     			add_location(div9, file$2, 27, 6, 850);
-    			attr_dev(div10, "class", "section-divider svelte-1eyj9g");
+    			attr_dev(div10, "class", "section-divider svelte-96vjxb");
     			add_location(div10, file$2, 25, 4, 767);
     			add_location(p6, file$2, 31, 8, 972);
-    			attr_dev(div11, "class", "dot svelte-1eyj9g");
+    			attr_dev(div11, "class", "dot svelte-96vjxb");
     			add_location(div11, file$2, 32, 8, 1011);
-    			attr_dev(div12, "class", "line svelte-1eyj9g");
+    			attr_dev(div12, "class", "line svelte-96vjxb");
     			add_location(div12, file$2, 33, 8, 1043);
-    			attr_dev(div13, "class", "section-header svelte-1eyj9g");
+    			attr_dev(div13, "class", "section-header svelte-96vjxb");
     			add_location(div13, file$2, 30, 6, 935);
-    			attr_dev(div14, "class", "section-content svelte-1eyj9g");
+    			attr_dev(div14, "class", "section-content svelte-96vjxb");
     			add_location(div14, file$2, 29, 4, 899);
-    			attr_dev(div15, "class", "section svelte-1eyj9g");
+    			attr_dev(div15, "class", "section svelte-96vjxb");
     			attr_dev(div15, "id", "experience");
     			add_location(div15, file$2, 24, 2, 725);
     			if (img2.src !== (img2_src_value = "./images/hobby.svg")) attr_dev(img2, "src", img2_src_value);
     			attr_dev(img2, "alt", "team");
-    			attr_dev(img2, "class", "svelte-1eyj9g");
-    			add_location(img2, file$2, 55, 6, 1659);
-    			attr_dev(div16, "class", "vertical-line svelte-1eyj9g");
-    			add_location(div16, file$2, 56, 6, 1707);
-    			attr_dev(div17, "class", "section-divider svelte-1eyj9g");
-    			add_location(div17, file$2, 54, 4, 1623);
-    			add_location(p7, file$2, 60, 8, 1829);
-    			attr_dev(div18, "class", "dot svelte-1eyj9g");
-    			add_location(div18, file$2, 61, 8, 1852);
-    			attr_dev(div19, "class", "line svelte-1eyj9g");
-    			add_location(div19, file$2, 62, 8, 1884);
-    			attr_dev(div20, "class", "section-header svelte-1eyj9g");
-    			add_location(div20, file$2, 59, 6, 1792);
-    			attr_dev(div21, "class", "line-container svelte-1eyj9g");
-    			add_location(div21, file$2, 64, 6, 1928);
-    			attr_dev(div22, "class", "section-content svelte-1eyj9g");
-    			add_location(div22, file$2, 58, 4, 1756);
-    			attr_dev(div23, "class", "section svelte-1eyj9g");
+    			attr_dev(img2, "class", "svelte-96vjxb");
+    			add_location(img2, file$2, 55, 6, 1674);
+    			attr_dev(div16, "class", "vertical-line svelte-96vjxb");
+    			add_location(div16, file$2, 56, 6, 1722);
+    			attr_dev(div17, "class", "section-divider svelte-96vjxb");
+    			add_location(div17, file$2, 54, 4, 1638);
+    			add_location(p7, file$2, 60, 8, 1844);
+    			attr_dev(div18, "class", "dot svelte-96vjxb");
+    			add_location(div18, file$2, 61, 8, 1867);
+    			attr_dev(div19, "class", "line svelte-96vjxb");
+    			add_location(div19, file$2, 62, 8, 1899);
+    			attr_dev(div20, "class", "section-header svelte-96vjxb");
+    			add_location(div20, file$2, 59, 6, 1807);
+    			attr_dev(div21, "class", "line-container svelte-96vjxb");
+    			add_location(div21, file$2, 64, 6, 1943);
+    			attr_dev(div22, "class", "section-content svelte-96vjxb");
+    			add_location(div22, file$2, 58, 4, 1771);
+    			attr_dev(div23, "class", "section svelte-96vjxb");
     			attr_dev(div23, "id", "hobbies");
-    			add_location(div23, file$2, 53, 2, 1584);
-    			if (img3.src !== (img3_src_value = "./images/document.svg")) attr_dev(img3, "src", img3_src_value);
+    			add_location(div23, file$2, 53, 2, 1599);
+    			if (img3.src !== (img3_src_value = "./images/team.svg")) attr_dev(img3, "src", img3_src_value);
     			attr_dev(img3, "alt", "team");
-    			attr_dev(img3, "class", "svelte-1eyj9g");
-    			add_location(img3, file$2, 81, 6, 2367);
-    			attr_dev(div24, "class", "vertical-line svelte-1eyj9g");
-    			add_location(div24, file$2, 82, 6, 2418);
-    			attr_dev(div25, "class", "section-divider svelte-1eyj9g");
-    			add_location(div25, file$2, 80, 4, 2331);
-    			add_location(p8, file$2, 86, 8, 2540);
-    			attr_dev(div26, "class", "dot svelte-1eyj9g");
-    			add_location(div26, file$2, 87, 8, 2575);
-    			attr_dev(div27, "class", "line svelte-1eyj9g");
-    			add_location(div27, file$2, 88, 8, 2607);
-    			attr_dev(div28, "class", "section-header svelte-1eyj9g");
-    			add_location(div28, file$2, 85, 6, 2503);
-    			attr_dev(div29, "class", "line-container svelte-1eyj9g");
-    			add_location(div29, file$2, 90, 6, 2651);
-    			attr_dev(div30, "class", "section-content svelte-1eyj9g");
-    			add_location(div30, file$2, 84, 4, 2467);
-    			attr_dev(div31, "class", "section svelte-1eyj9g");
-    			attr_dev(div31, "id", "relevant-coursework");
-    			add_location(div31, file$2, 79, 2, 2280);
-    			if (img4.src !== (img4_src_value = "./images/team.svg")) attr_dev(img4, "src", img4_src_value);
-    			attr_dev(img4, "alt", "team");
-    			attr_dev(img4, "class", "svelte-1eyj9g");
-    			add_location(img4, file$2, 100, 6, 2881);
-    			attr_dev(div32, "class", "vertical-line svelte-1eyj9g");
-    			add_location(div32, file$2, 101, 6, 2928);
-    			attr_dev(div33, "class", "section-divider svelte-1eyj9g");
-    			add_location(div33, file$2, 99, 4, 2845);
-    			add_location(p9, file$2, 105, 8, 3050);
-    			attr_dev(div34, "class", "dot svelte-1eyj9g");
-    			add_location(div34, file$2, 106, 8, 3084);
-    			attr_dev(div35, "class", "line svelte-1eyj9g");
-    			add_location(div35, file$2, 107, 8, 3116);
-    			attr_dev(div36, "class", "section-header svelte-1eyj9g");
-    			add_location(div36, file$2, 104, 6, 3013);
-    			attr_dev(div37, "class", "section-content svelte-1eyj9g");
-    			add_location(div37, file$2, 103, 4, 2977);
-    			attr_dev(div38, "class", "section svelte-1eyj9g");
-    			attr_dev(div38, "id", "campus-involvement");
-    			add_location(div38, file$2, 98, 2, 2795);
-    			add_location(div39, file$2, 0, 0, 0);
+    			attr_dev(img3, "class", "svelte-96vjxb");
+    			add_location(img3, file$2, 100, 6, 2905);
+    			attr_dev(div24, "class", "vertical-line svelte-96vjxb");
+    			add_location(div24, file$2, 101, 6, 2952);
+    			attr_dev(div25, "class", "section-divider svelte-96vjxb");
+    			add_location(div25, file$2, 99, 4, 2869);
+    			add_location(p8, file$2, 105, 8, 3074);
+    			attr_dev(div26, "class", "dot svelte-96vjxb");
+    			add_location(div26, file$2, 106, 8, 3108);
+    			attr_dev(div27, "class", "line svelte-96vjxb");
+    			add_location(div27, file$2, 107, 8, 3140);
+    			attr_dev(div28, "class", "section-header svelte-96vjxb");
+    			add_location(div28, file$2, 104, 6, 3037);
+    			attr_dev(div29, "class", "section-content svelte-96vjxb");
+    			add_location(div29, file$2, 103, 4, 3001);
+    			attr_dev(div30, "class", "section svelte-96vjxb");
+    			attr_dev(div30, "id", "campus-involvement");
+    			add_location(div30, file$2, 98, 2, 2819);
+    			add_location(div31, file$2, 0, 0, 0);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, div39, anchor);
-    			append_dev(div39, div8);
+    			insert_dev(target, div31, anchor);
+    			append_dev(div31, div8);
     			append_dev(div8, div1);
     			append_dev(div1, img0);
     			append_dev(div1, t0);
@@ -1901,8 +1807,8 @@ var app = (function () {
     			append_dev(div6, p4);
     			append_dev(div7, t13);
     			append_dev(div7, p5);
-    			append_dev(div39, t16);
-    			append_dev(div39, div15);
+    			append_dev(div31, t16);
+    			append_dev(div31, div15);
     			append_dev(div15, div10);
     			append_dev(div10, img1);
     			append_dev(div10, t17);
@@ -1917,12 +1823,12 @@ var app = (function () {
     			append_dev(div13, div12);
     			append_dev(div14, t22);
 
-    			for (let i = 0; i < each_blocks_3.length; i += 1) {
-    				each_blocks_3[i].m(div14, null);
+    			for (let i = 0; i < each_blocks_2.length; i += 1) {
+    				each_blocks_2[i].m(div14, null);
     			}
 
-    			append_dev(div39, t23);
-    			append_dev(div39, div23);
+    			append_dev(div31, t23);
+    			append_dev(div31, div23);
     			append_dev(div23, div17);
     			append_dev(div17, img2);
     			append_dev(div17, t24);
@@ -1938,90 +1844,45 @@ var app = (function () {
     			append_dev(div22, t29);
     			append_dev(div22, div21);
 
-    			for (let i = 0; i < each_blocks_2.length; i += 1) {
-    				each_blocks_2[i].m(div21, null);
+    			for (let i = 0; i < each_blocks_1.length; i += 1) {
+    				each_blocks_1[i].m(div21, null);
     			}
 
-    			append_dev(div39, t30);
-    			append_dev(div39, div31);
-    			append_dev(div31, div25);
+    			append_dev(div31, t30);
+    			append_dev(div31, div30);
+    			append_dev(div30, div25);
     			append_dev(div25, img3);
     			append_dev(div25, t31);
     			append_dev(div25, div24);
-    			append_dev(div31, t32);
-    			append_dev(div31, div30);
-    			append_dev(div30, div28);
+    			append_dev(div30, t32);
+    			append_dev(div30, div29);
+    			append_dev(div29, div28);
     			append_dev(div28, p8);
     			append_dev(div28, t34);
     			append_dev(div28, div26);
     			append_dev(div28, t35);
     			append_dev(div28, div27);
-    			append_dev(div30, t36);
-    			append_dev(div30, div29);
-
-    			for (let i = 0; i < each_blocks_1.length; i += 1) {
-    				each_blocks_1[i].m(div29, null);
-    			}
-
-    			append_dev(div39, t37);
-    			append_dev(div39, div38);
-    			append_dev(div38, div33);
-    			append_dev(div33, img4);
-    			append_dev(div33, t38);
-    			append_dev(div33, div32);
-    			append_dev(div38, t39);
-    			append_dev(div38, div37);
-    			append_dev(div37, div36);
-    			append_dev(div36, p9);
-    			append_dev(div36, t41);
-    			append_dev(div36, div34);
-    			append_dev(div36, t42);
-    			append_dev(div36, div35);
-    			append_dev(div37, t43);
+    			append_dev(div29, t36);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].m(div37, null);
+    				each_blocks[i].m(div29, null);
     			}
     		},
     		p: function update(ctx, [dirty]) {
     			if (dirty & /*experiences*/ 1) {
-    				each_value_4 = /*experiences*/ ctx[0];
-    				validate_each_argument(each_value_4);
+    				each_value_3 = /*experiences*/ ctx[0];
+    				validate_each_argument(each_value_3);
     				let i;
 
-    				for (i = 0; i < each_value_4.length; i += 1) {
-    					const child_ctx = get_each_context_4(ctx, each_value_4, i);
-
-    					if (each_blocks_3[i]) {
-    						each_blocks_3[i].p(child_ctx, dirty);
-    					} else {
-    						each_blocks_3[i] = create_each_block_4(child_ctx);
-    						each_blocks_3[i].c();
-    						each_blocks_3[i].m(div14, null);
-    					}
-    				}
-
-    				for (; i < each_blocks_3.length; i += 1) {
-    					each_blocks_3[i].d(1);
-    				}
-
-    				each_blocks_3.length = each_value_4.length;
-    			}
-
-    			if (dirty & /*hobbies*/ 2) {
-    				each_value_2 = /*hobbies*/ ctx[1];
-    				validate_each_argument(each_value_2);
-    				let i;
-
-    				for (i = 0; i < each_value_2.length; i += 1) {
-    					const child_ctx = get_each_context_2$1(ctx, each_value_2, i);
+    				for (i = 0; i < each_value_3.length; i += 1) {
+    					const child_ctx = get_each_context_3(ctx, each_value_3, i);
 
     					if (each_blocks_2[i]) {
     						each_blocks_2[i].p(child_ctx, dirty);
     					} else {
-    						each_blocks_2[i] = create_each_block_2$1(child_ctx);
+    						each_blocks_2[i] = create_each_block_3(child_ctx);
     						each_blocks_2[i].c();
-    						each_blocks_2[i].m(div21, null);
+    						each_blocks_2[i].m(div14, null);
     					}
     				}
 
@@ -2029,11 +1890,11 @@ var app = (function () {
     					each_blocks_2[i].d(1);
     				}
 
-    				each_blocks_2.length = each_value_2.length;
+    				each_blocks_2.length = each_value_3.length;
     			}
 
-    			if (dirty & /*coursework*/ 4) {
-    				each_value_1 = /*coursework*/ ctx[2];
+    			if (dirty & /*hobbies*/ 2) {
+    				each_value_1 = /*hobbies*/ ctx[1];
     				validate_each_argument(each_value_1);
     				let i;
 
@@ -2045,7 +1906,7 @@ var app = (function () {
     					} else {
     						each_blocks_1[i] = create_each_block_1$1(child_ctx);
     						each_blocks_1[i].c();
-    						each_blocks_1[i].m(div29, null);
+    						each_blocks_1[i].m(div21, null);
     					}
     				}
 
@@ -2056,8 +1917,8 @@ var app = (function () {
     				each_blocks_1.length = each_value_1.length;
     			}
 
-    			if (dirty & /*clubs*/ 8) {
-    				each_value = /*clubs*/ ctx[3];
+    			if (dirty & /*clubs*/ 4) {
+    				each_value = /*clubs*/ ctx[2];
     				validate_each_argument(each_value);
     				let i;
 
@@ -2069,7 +1930,7 @@ var app = (function () {
     					} else {
     						each_blocks[i] = create_each_block$1(child_ctx);
     						each_blocks[i].c();
-    						each_blocks[i].m(div37, null);
+    						each_blocks[i].m(div29, null);
     					}
     				}
 
@@ -2083,8 +1944,7 @@ var app = (function () {
     		i: noop,
     		o: noop,
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div39);
-    			destroy_each(each_blocks_3, detaching);
+    			if (detaching) detach_dev(div31);
     			destroy_each(each_blocks_2, detaching);
     			destroy_each(each_blocks_1, detaching);
     			destroy_each(each_blocks, detaching);
@@ -2123,7 +1983,7 @@ var app = (function () {
     		clubs
     	});
 
-    	return [experiences, hobbies, coursework, clubs];
+    	return [experiences, hobbies, clubs];
     }
 
     class MainSection extends SvelteComponentDev {
