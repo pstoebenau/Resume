@@ -35,6 +35,14 @@ Experience:
       - Maintain admin panel and main website
       - Use PHP and tech like Bootstrap, Font Awesome, and jQuery
       - Created custom blog generator that saves a day for each blog
+  - name: Chill Chili
+    url: https://chillchili.ml
+    location: Orlando, Fl
+    role: Full Stack Web & App Developer
+    dateRange: March 2021 - April 2021
+    description:
+      - Flutter application for iOS, Android, and Web
+      - MongoDB, Node.js, and Typescript for REST API
   - name: KnightHacks Development Team
     url: https://knighthacks.org
     location: Orlando, FL
@@ -52,15 +60,6 @@ Experience:
     description:
       - Lead development team in a AGILE work environment
       - Uses Vue.js as framework
-  - name: Chill Chili
-    url: https://chillchili.ml
-    location: Orlando, Fl
-    role: Full Stack Web & App Developer
-    dateRange: March 2021 - April 2021
-    description:
-      - Flutter application for iOS, Android, and Web
-      - MongoDB, Node.js, and Typescript for REST API
-
 
 Hobbies:
   - name: 3D Printing
