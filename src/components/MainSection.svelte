@@ -35,7 +35,12 @@
       </div>
       {#each experiences as experience}
         <div class="line-container">
-          <a href="{experience.url}" target=blank><p class="section-title">{experience.name}</p></a>
+          <a href="{experience.url}" target=blank>
+            <p class="section-title">
+              {experience.name}
+              <img class='inline-icon' src="./images/link.svg" alt="link">
+            </p>
+          </a>
           <p>{experience.location}</p>
         </div>
         <div class="line-container">
@@ -235,5 +240,10 @@ interface CampusInvolvement {
   height: 4px;
   background-color: #111;
   border-radius: 2px;
+}
+
+.inline-icon {
+  display: inline;
+  height: 1rem;
 }
 </style>

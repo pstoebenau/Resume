@@ -23,10 +23,10 @@
       <p>PERSONAL PROJECTS</p>
     </div>
     <div class="project-list">
-      {#each Object.entries(data["Personal Project"]) as project}
-      <a href={project[1]}>
+      {#each data["Personal Project"] as project}
+      <a href={project['url']}>
         <p>
-          <b>{project[0]}</b><i>, Github</i>
+          <b>{project['name']}</b><i>, Github</i>
           <img src="./images/link.svg" alt="link">
         </p>
       </a>

@@ -3,8 +3,8 @@ Objective: Skilled developer in web development and Java and Python development 
 Skills:
   Programming Languages: HTML, CSS. JavaScript, MySQL, PHP, TypeScript, Java, Python, C, Dart
   Web Frameworks: Angular.js, React.js, Vue.js, Svelte, React Native, Flutter
-  Web Technologies: Express.js, Socket.io, Tensorflow.js, Tensorflow
-  Software: Git, GitHub, Linux, Unix, Unity 3D
+  Web Technologies: Express.js, Socket.io, Tensorflow
+  Software: Git, GitHub, Linux, Unix, Unity3D, Unreal Engine, Blender
   Languages: English (Native)<br>German (Intermediate)<br>Spanish (Basic)
 
 Honors:
@@ -12,18 +12,23 @@ Honors:
   - UCF Dean's List
 
 Personal Project:
-  BicBacBoe: https://github.com/pstoebenau/BicBacBoe
-  Polynomial Regression Neural Network: https://github.com/pstoebenau/Polynomial_Regression_AI
-  4D Visualization: https://github.com/pstoebenau/4D-Visualization
-  Resume: https://github.com/pstoebenau/Resume
-  Neural Network: https://github.com/pstoebenau/NeuralNetwork
+  - name: BicBacBoe
+    url: https://github.com/pstoebenau/BicBacBoe
+  - name: Polynomial Regression Neural Network
+    url: https://github.com/pstoebenau/Polynomial_Regression_AI
+  - name: 4D Visualization
+    url: https://github.com/pstoebenau/4D-Visualization
+  - name: Resume
+    url: https://github.com/pstoebenau/Resume
+  - name: Neural Network
+    url: https://github.com/pstoebenau/NeuralNetwork
 
 Education:
   college: University of Central Florida
   location: Orlando, FL
   degree: Bachelors of Science in Computer Science
   gradDate: Apr 2022
-  gpa: 3.62
+  gpa: 3.64
 
 Experience:
   - name: Amazing Voice
@@ -64,14 +69,13 @@ Experience:
 Hobbies:
   - name: 3D Printing
     description:
-    - Built Anet A8 printer
-    - Custom Merlin software
-    - Accessible anywhere with Octoprint
+      - Custom Merlin software
+      - Raspberry Pi server for remote access using Octoprint
   - name: FPV Drone
     description:
-    - Built Racing drone
-    - Top speed is around 80mph
-    - Transmits analog video to FPV headset
+      - Built Racing drone
+      - Top speed is around 80mph
+      - Transmits analog video to FPV headset
 
 Coursework:
   - Computer Science II
@@ -80,7 +84,6 @@ Coursework:
   - Object Oriented Programming
   - Computer Logic & Organization
   - Security in Computing
-
 
 Campus Involvement:
   - name: KnightHacks
