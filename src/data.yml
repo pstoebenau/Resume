@@ -27,8 +27,8 @@ Education:
   college: University of Central Florida
   location: Orlando, FL
   degree: Bachelors of Science in Computer Science
-  gradDate: Apr 2022
-  gpa: 3.64
+  gradDate: May 2022
+  gpa: 3.55
 
 Experience:
   - name: Amazing Voice
@@ -40,6 +40,13 @@ Experience:
       - Maintain admin panel and main website
       - Use PHP and tech like Bootstrap, Font Awesome, and jQuery
       - Created custom blog generator that saves a day for each blog
+  - name: Project AVA
+    location: Orlando, FL
+    role: Embedded Engineer
+    dateRange: March 2021 - Present
+    description:
+      - Partnered with Vū Studios to reimagine camera tracking
+      - Worked with Jetson Nano and multiple SLAM algorithms
   - name: Chill Chili
     url: https://chillchili.ml
     location: Orlando, Fl
@@ -68,17 +75,12 @@ Experience:
 
 Hobbies:
   - name: 3D Printing
-    description:
-      - Custom Merlin software
-      - Raspberry Pi server for remote access using Octoprint
   - name: FPV Drone
-    description:
-      - Built Racing drone
-      - Top speed is around 80mph
-      - Transmits analog video to FPV headset
+  - name: Music Production
+  - name: Virtual Production
 
 Coursework:
-  - Computer Science II
+  - Senior Design
   - Discrete Computational Structures
   - Systems Software
   - Object Oriented Programming

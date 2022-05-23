@@ -23,8 +23,8 @@
       <p>(407) 406-7925</p>
     </div>
     <div class="icon-description">
-      <img src="./images/github.svg" alt="github">
-      <p><a href="https://github.com/pstoebenau">github.com/pstoebenau</a></p>
+      <img src="./images/web.svg" alt="portfolio website">
+      <p><a href="https://pstoebenau.ml">www.pstoebenau.ml</a></p>
     </div>
   </div>
   <div class="dotted-line"></div>

@@ -69,13 +69,8 @@
       </div>
       <div class="line-container">
         {#each hobbies as hobby}
-          <div class="hobby">
-            <p class="section-title">{hobby.name}</p>
-            <ul>
-              {#each hobby.description as str}
-                <li>{str}</li>
-              {/each}
-            </ul>
+          <div class="flex-around">
+            <p>{hobby.name}</p>
           </div>
         {/each}
       </div>
@@ -245,5 +240,10 @@ interface CampusInvolvement {
 .inline-icon {
   display: inline;
   height: 1rem;
+}
+
+.flex-around {
+  display: flex;
+  justify-content: space-around;
 }
 </style>
