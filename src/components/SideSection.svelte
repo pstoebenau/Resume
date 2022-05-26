@@ -27,7 +27,7 @@
       <a href={project['url']}>
         <p>
           <b>{project['name']}</b><i>, Github</i>
-          <img src="./images/link.svg" alt="link">
+          <img src="/images/link.svg" alt="link">
         </p>
       </a>
       {/each}
@@ -45,7 +45,7 @@
 </div>
 
 <script lang="ts">
-  import data from "@/data.yml";
+  import data from "../data.yml";
 </script>
 
 <style lang="scss">

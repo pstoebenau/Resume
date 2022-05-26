@@ -11,9 +11,9 @@
 </div>
 
 <script lang="ts">
-  import Header from "@/components/Header.svelte";
-  import SideSection from "@/components/SideSection.svelte";
-  import MainSection from "@/components/MainSection.svelte";
+  import Header from "../components/Header.svelte";
+  import SideSection from "../components/SideSection.svelte";
+  import MainSection from "../components/MainSection.svelte";
 </script>
 
 <style scoped>
@@ -23,11 +23,18 @@
 }
 
 #page {
-  width: 21.59cm;
-  height: 27.94cm;
-  background: white;
+  width: 216mm;
+  min-height: 278mm;
   display: block;
-  /* box-shadow: 0 0 0.5cm rgba(0,0,0,0.5); */
+  background-color: white;
+  margin: 0;
+  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+}
+@media print {
+  @page {
+    margin: 0;
+    box-shadow: 0;
+  }
 }
 
 #margin {

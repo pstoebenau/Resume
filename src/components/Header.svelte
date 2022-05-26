@@ -11,20 +11,20 @@
   </div>
   <div id="contact-info">
     <div class="icon-description">
-      <img src="./images/location.svg" alt="location">
+      <img src="/images/location.svg" alt="location">
       <p>Orlando, FL</p>
     </div>
     <div class="icon-description">
-      <img src="./images/email.svg" alt="email">
+      <img src="/images/email.svg" alt="email">
       <p>pstoebenau@knights.ucf.edu</p>
     </div>
     <div class="icon-description">
-      <img src="./images/phone.svg" alt="phone">
+      <img src="/images/phone.svg" alt="phone">
       <p>(407) 406-7925</p>
     </div>
     <div class="icon-description">
-      <img src="./images/web.svg" alt="portfolio website">
-      <p><a href="https://pstoebenau.ml">www.pstoebenau.ml</a></p>
+      <img src="/images/web.svg" alt="portfolio website">
+      <p><a href="https://pstoebenau.ml">pstoebenau.ml</a></p>
     </div>
   </div>
   <div class="dotted-line"></div>
