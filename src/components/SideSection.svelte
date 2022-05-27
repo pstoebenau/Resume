@@ -1,9 +1,9 @@
 <div>
   <div class="side-section" id="objective">
     <div class="section-header">
-      OBJECTIVE
+      SUMMARY
     </div>
-    <p>{data.Objective}</p>
+    <p>{data.Summary}</p>
   </div>
   
   <div class="side-section" id="skills">
@@ -26,7 +26,7 @@
       {#each data["Personal Project"] as project}
       <a href={project['url']}>
         <p>
-          <b>{project['name']}</b><i>, Github</i>
+          <b>{project['name']}</b>
           <img src="/images/link.svg" alt="">
         </p>
       </a>
@@ -34,14 +34,14 @@
     </div>
   </div>
   
-  <div class="side-section" id="honors">
+  <!-- <div class="side-section" id="honors">
     <div class="section-header">
-      <p>HONORS</p>
+      <p>AWARDS</p>
     </div>
     {#each data["Honors"] as award}
        <p>{award}</p>
     {/each}
-  </div>
+  </div> -->
 </div>
 
 <script lang="ts">

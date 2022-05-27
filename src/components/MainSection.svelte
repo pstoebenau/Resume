@@ -36,12 +36,12 @@
       {#each experiences as experience}
         <div class="line-container">
           <a href="{experience.url}" target=blank>
-            <p class="section-title">
+            <b class="section-title">
               {experience.name}
               <img class='inline-icon' src="/images/link.svg" alt="">
-            </p>
+            </b>
           </a>
-          <p>{experience.location}</p>
+          <p class="noselect">{experience.location}</p>
         </div>
         <div class="line-container">
           <i>{experience.role}</i>
@@ -52,6 +52,7 @@
             <li>{str}</li>
           {/each}
         </ul>
+        <p></p>
       {/each}
     </div>
   </div>
@@ -109,10 +110,7 @@
       </div>
       {#each clubs as club}
         <div class="line-container">
-          <div style="display: flex">
-            <p class="section-title">{club.name}</p>
-            <i>, {club.role}</i>
-          </div>
+          <p><b>{club.name}</b><i>, {club.role}</i></p>
           <p>{club.dateRange}</p>
         </div>
       {/each}
@@ -211,14 +209,6 @@ interface CampusInvolvement {
     .vertical-line {
       height: calc(100% - 30px);
     }
-  }
-}
-
-.hobby {
-  width: 50%;
-
-  ul {
-    padding-inline-start: 20px;
   }
 }
 

@@ -1,11 +1,14 @@
-Objective: Skilled developer in web development and Java and Python development that can easily adapt to different workflows. Passionate about clean and reusable code.
+Summary: Web developer who collaboratively works in fast-paced workflows designed to enhance ouput. My many innovative personal projects show my commitment to clean, reusable, and efficient code. I'm enthusiastic to grow your business while also adapting to the ever-evolving web landscape.
 
 Skills:
   Programming Languages: HTML, CSS. JavaScript, MySQL, PHP, TypeScript, Java, Python, C, Dart
-  Web Frameworks: Angular.js, React.js, Vue.js, Svelte, React Native, Flutter
-  Web Technologies: Express.js, Socket.io, Tensorflow
+  Frameworks: Angular.js, React.js, Vue.js, Svelte, React Native, Flutter, Flask
+  Technologies: Node.js, Express.js, Socket.io, Three.js, Tensorflow
   Software: Git, GitHub, Linux, Unix, Unity3D, Unreal Engine, Blender
-  Languages: English (Native)<br>German (Intermediate)<br>Spanish (Basic)
+  Languages: |
+    English (Native)<br>
+    German (Intermediate)<br>
+    Spanish (Basic)
 
 Honors:
   - Bright Futures, Academic Scholar
@@ -43,7 +46,7 @@ Experience:
   - name: Project AVA
     location: Orlando, FL
     role: Embedded Engineer
-    dateRange: March 2021 - Present
+    dateRange: August 2021 - Present
     description:
       - Partnered with Vū Studios to reimagine camera tracking
       - Worked with Jetson Nano and multiple SLAM algorithms
@@ -51,26 +54,27 @@ Experience:
     url: https://chillchili.ml
     location: Orlando, Fl
     role: Full Stack Web & App Developer
-    dateRange: March 2021 - April 2021
+    dateRange: January 2021 - April 2021
     description:
       - Flutter application for iOS, Android, and Web
       - MongoDB, Node.js, and Typescript for REST API
+      - Created Docker based workflow with GitHub CI/CD
   - name: KnightHacks Development Team
     url: https://knighthacks.org
     location: Orlando, FL
     role: Full Stack Web & iOS Developer
     dateRange: Apr 2019 - August 2020
     description:
-      - Created KnightHacks website for club events
+      - Worked in AGILE development environment 
       - Uses Azure functions and Node.js with Google Calendar
-      - Uses Swift 5 in Xcode with a backend in Node.js
+      - Backend run on Docker for development
   - name: Crown Heritage Law
     url: https://crownheritagelaw.com
     location: Orlando, FL
     role: Web Developer & Project Manager
     dateRange: Aug 2020 - Dec 2020
     description:
-      - Lead development team in a AGILE work environment
+      - Project manager in a AGILE work environment
 
 Hobbies:
   - name: 3D Printing

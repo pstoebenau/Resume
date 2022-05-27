@@ -25,6 +25,7 @@
 #page {
   width: 216mm;
   min-height: 278mm;
+  max-height: 278mm;
   display: block;
   background-color: white;
   margin: 0;
