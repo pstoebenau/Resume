@@ -38,7 +38,7 @@
           <a href="{experience.url}" target=blank>
             <p class="section-title">
               {experience.name}
-              <img class='inline-icon' src="/images/link.svg" alt="link">
+              <img class='inline-icon' src="/images/link.svg" alt="">
             </p>
           </a>
           <p>{experience.location}</p>
