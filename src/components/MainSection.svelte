@@ -1,7 +1,7 @@
 <div>
   <div class="section" id="education">
     <div class="section-divider">
-      <img src="/images/university.svg" alt="team">
+      <img src="/images/university.svg" alt="">
       <div class="vertical-line"></div>
     </div>
     <div class="section-content">
@@ -24,7 +24,7 @@
   
   <div class="section" id="experience">
     <div class="section-divider">
-      <img src="/images/edit.svg" alt="team">
+      <img src="/images/edit.svg" alt="">
       <div class="vertical-line"></div>
     </div>
     <div class="section-content">
@@ -58,7 +58,7 @@
   
   <div class="section" id="hobbies">
     <div class="section-divider">
-      <img src="/images/hobby.svg" alt="team">
+      <img src="/images/hobby.svg" alt="">
       <div class="vertical-line"></div>
     </div>
     <div class="section-content">
@@ -79,7 +79,7 @@
   
   <!-- <div class="section" id="relevant-coursework">
     <div class="section-divider">
-      <img src="/images/document.svg" alt="team">
+      <img src="/images/document.svg" alt="">
       <div class="vertical-line"></div>
     </div>
     <div class="section-content">
@@ -98,7 +98,7 @@
 
   <div class="section" id="campus-involvement">
     <div class="section-divider">
-      <img src="/images/team.svg" alt="team">
+      <img src="/images/team.svg" alt="">
       <div class="vertical-line"></div>
     </div>
     <div class="section-content">

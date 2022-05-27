@@ -27,7 +27,7 @@
       <a href={project['url']}>
         <p>
           <b>{project['name']}</b><i>, Github</i>
-          <img src="/images/link.svg" alt="link">
+          <img src="/images/link.svg" alt="">
         </p>
       </a>
       {/each}
