@@ -1,3 +1,10 @@
+name: PATRICK STOEBENAU
+title: Software & Web Developer
+location: Orlando, FL
+email: pstoebenau@knights.ucf.edu
+phone: (407) 406-7925
+personalSite: pstoebenau.ml
+
 Summary: Web developer who collaboratively works in fast-paced workflows designed to enhance ouput. My many innovative personal projects show my commitment to clean, reusable, and efficient code. I'm enthusiastic to grow your business while also adapting to the ever-evolving web landscape.
 
 Skills:
@@ -16,15 +23,15 @@ Honors:
 
 Personal Project:
   - name: Interactive MNIST
-    url: https://nnmnist.pstoebenau.ml/
+    url: https://nnmnist.pstoebenau.ml
   - name: Evader
     url: https://evader.pstoebenau.ml
   - name: Project Leech
     url: https://leech.pstoebenau.ml
   - name: BicBacBoe
-    url: https://github.com/pstoebenau/BicBacBoe
+    url: https://bicbacboe.pstoebenau.ml
   - name: Trader
-    url: https://trader.pstoebenau.ml/
+    url: https://trader.ml
 
 Education:
   college: University of Central Florida
@@ -44,6 +51,7 @@ Experience:
       - Use PHP and tech like Bootstrap, Font Awesome, and jQuery
       - Created custom blog generator that saves a day for each blog
   - name: Project AVA
+    url: https://www.cecs.ucf.edu/SeniorDesignShowcase/team/project-ava/
     location: Orlando, FL
     role: Embedded Engineer
     dateRange: August 2021 - Present
@@ -74,7 +82,7 @@ Experience:
     role: Web Developer & Project Manager
     dateRange: Aug 2020 - Dec 2020
     description:
-      - Project manager in a AGILE work environment
+      - Project manager in a AGILE work environment using Vue.js
 
 Hobbies:
   - name: 3D Printing

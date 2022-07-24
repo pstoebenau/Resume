@@ -1,30 +1,30 @@
 <script lang="ts">
-  
+  import data from "../data.yml";
 </script>
 
 <div id="header">
   <div id="name-description">
     <div>
-      <p id="name">PATRICK STOEBENAU</p>
-      <p id="description">Software & Web Developer</p>
+      <p id="name">{data["name"]}</p>
+      <p id="description">{data["title"]}</p>
     </div>
   </div>
   <div id="contact-info">
     <div class="icon-description">
       <img src="/images/location.svg" alt="location: ">
-      <p>Orlando, FL</p>
+      <p>{data["location"]}</p>
     </div>
     <div class="icon-description">
       <img src="/images/email.svg" alt="email: ">
-      <p>pstoebenau@knights.ucf.edu</p>
+      <p><a href="mailto:{data["email"]}">{data["email"]}</a></p>
     </div>
     <div class="icon-description">
       <img src="/images/phone.svg" alt="phone: ">
-      <p>(407) 406-7925</p>
+      <p><a href="tel:{data["phone"]}">{data["phone"]}</a></p>
     </div>
     <div class="icon-description">
       <img src="/images/web.svg" alt="personal website: ">
-      <p><a href="https://pstoebenau.ml">pstoebenau.ml</a></p>
+      <p><a href="https://{data["personalSite"]}">{data["personalSite"]}</a></p>
     </div>
   </div>
   <div class="dotted-line"></div>

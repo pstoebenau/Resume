@@ -72,3 +72,9 @@ p {
 	-ms-user-select: none;
 	user-select: none;
 }
+
+@media print {
+  html, body {
+		background-color: white;
+  }
+}

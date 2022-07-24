@@ -36,6 +36,13 @@
     margin: 0;
     box-shadow: 0;
   }
+
+  #page {
+    box-shadow: unset;
+    page-break-after:always;
+  }
+
+  * { overflow: visible !important; } 
 }
 
 #margin {
