@@ -3,7 +3,7 @@ title: Software & Web Developer
 location: Orlando, FL
 email: pstoebenau@knights.ucf.edu
 phone: (407) 406-7925
-personalSite: pstoebenau.ml
+personalSite: patrickstoebenau.com
 
 Summary: Web developer who collaboratively works in fast-paced workflows designed to enhance ouput. My many innovative personal projects show my commitment to clean, reusable, and efficient code. I'm enthusiastic to grow your business while also adapting to the ever-evolving web landscape.
 
@@ -23,15 +23,15 @@ Honors:
 
 Personal Project:
   - name: Interactive MNIST
-    url: https://nnmnist.pstoebenau.ml
+    url: https://nnmnist.patrickstoebenau.com
   - name: Evader
-    url: https://evader.pstoebenau.ml
+    url: https://evader.patrickstoebenau.com
   - name: Project Leech
-    url: https://leech.pstoebenau.ml
+    url: https://leech.patrickstoebenau.com
   - name: BicBacBoe
-    url: https://bicbacboe.pstoebenau.ml
+    url: https://bicbacboe.patrickstoebenau.com
   - name: Trader
-    url: https://trader.ml
+    url: https://trader.patrickstoebenau.com
 
 Education:
   college: University of Central Florida
@@ -59,7 +59,7 @@ Experience:
       - Partnered with Vū Studios to reimagine camera tracking
       - Worked with Jetson Nano and multiple SLAM algorithms
   - name: Chill Chili
-    url: https://chillchili.ml
+    url: https://chillchili.patrickstoebenau.com
     location: Orlando, Fl
     role: Full Stack Web & App Developer
     dateRange: January 2021 - April 2021
